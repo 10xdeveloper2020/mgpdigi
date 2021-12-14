@@ -1,23 +1,25 @@
 import logo from './logo.svg';
+import mgpLogo from './mgp_logo.jpg';
+import { Segment, Header, Icon } from 'semantic-ui-react'
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header as='h1' icon className="App-header">
+        <Icon name='settings' color="violet" />
+    MG Digital Prints
+    <Header.Subheader>
+          Coming Soon!!
+    </Header.Subheader>
+      </Header>
+      {/* <Segment>
+        <Icon loading name='certificate' />
+      </Segment> */}
+      <Segment className="App-footer" textAlign="center">
+        <p>Powered by <img src={mgpLogo} className="mgp-logo" alt="logo" /></p>
+      </Segment>
     </div>
   );
 }
