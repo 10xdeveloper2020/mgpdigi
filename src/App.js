@@ -11,7 +11,7 @@ function App() {
         <Icon name='settings' color="violet" />
     MG Digital Prints
     <Header.Subheader>
-          Coming Soon!!
+          Coming Soon!
     </Header.Subheader>
       </Header>
       {/* <Segment>
